@@ -1,0 +1,25 @@
+# Bottom 10 Movies by Revenue
+
+SELECT
+  f.film_id AS unique_film_id,
+  f.title AS title_of_film,
+  SUM(p.amount) AS revenue_by_film,
+  c.name AS genre_of_film,
+  f.release_year AS release_date_of_film
+FROM
+  film f
+JOIN
+  inventory i ON f.film_id = i.film_id
+JOIN
+  rental r ON i.inventory_id = r.inventory_id
+JOIN
+  payment p ON r.rental_id = p.rental_id
+JOIN
+  film_category fc ON f.film_id = fc.film_id
+JOIN
+  category c ON fc.category_id = c.category_id
+GROUP BY
+  f.film_id, f.title, c.name, f.release_year
+ORDER BY
+  revenue_by_film ASC
+LIMIT 10;
