@@ -18,16 +18,16 @@ The Rockbuster Stealth Management Board has asked a series of business questions
 Addressing these questions will help our business understand its customer base, optimize content offerings, tailor marketing strategies, and strategically plan its marketexpansion to maximize revenue.
 
 ### Initial Data
-Customer Data: Information on customer demographics and locations.
-Film Data: Details about movies, including genres and languages.
-Rental and Payment Data: Transactions related to rentals, payments, and revenue generation.
-Geographic Data: Customer and store locations, including countries and cities.
+- Customer Data: Information on customer demographics and locations.
+- Film Data: Details about movies, including genres and languages.
+- Rental and Payment Data: Transactions related to rentals, payments, and revenue generation.
+- Geographic Data: Customer and store locations, including countries and cities.
 
 ### Approach & Methods
-Data Aggregation and Analysis: Utilize SQL queries to extract and aggregate data related to revenue, rental durations, and customer locations.
-Descriptive Statistics: Analyze rental durations and revenue contributions.
-Geographic Analysis: Map sales figures by region to identify high-value customer bases.
-Visualization: Use tools like Excel or Tableau to create visuals for clear communication of insights to management.
+- Data Aggregation and Analysis: Utilize SQL queries to extract and aggregate data related to revenue, rental durations, and customer locations.
+- Descriptive Statistics: Analyze rental durations and revenue contributions.
+- Geographic Analysis: Map sales figures by region to identify high-value customer bases.
+- Visualization: Use tools like Excel or Tableau to create visuals for clear communication of insights to management.
 
 ### Tools & Systems Used
 - pgAdmin4
