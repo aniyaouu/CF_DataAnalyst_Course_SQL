@@ -1,0 +1,23 @@
+# Top10 Customers by Revenue
+
+SELECT 
+    c.customer_id AS unique_identifier,
+    SUM(p.amount) AS revenue_by_customer,
+    CONCAT(c.first_name, ' ', c.last_name) AS customer_name,
+    co.country AS customer_country,
+    ci.city AS customer_city
+FROM 
+    customer c
+JOIN 
+    payment p ON c.customer_id = p.customer_id
+JOIN 
+    address a ON c.address_id = a.address_id
+JOIN 
+    city ci ON a.city_id = ci.city_id
+JOIN 
+    country co ON ci.country_id = co.country_id
+GROUP BY 
+    c.customer_id, c.first_name, c.last_name, co.country, ci.city
+ORDER BY 
+    revenue_by_customer DESC
+LIMIT 10;
