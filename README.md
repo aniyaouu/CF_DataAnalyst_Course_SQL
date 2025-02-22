@@ -1,4 +1,4 @@
-# CF DataAnalyst Course - SQL 
+# CF DataAnalyst Course - SQL - Rockbuster Stealth Analysis 
 ## Data-Driven Launch Strategy for Online Video Service
 
 ### Problem Statement
