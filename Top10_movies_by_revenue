@@ -1,6 +1,6 @@
 # Top10 Movies by Revneue
 
-"SELECT
+SELECT
   f.film_id AS unique_film_id,
   f.title AS title_of_film,
   SUM(p.amount) AS revenue_by_film,
@@ -22,4 +22,4 @@ GROUP BY
   f.film_id, f.title, c.name, f.release_year
 ORDER BY
   revenue_by_film DESC
-LIMIT 10;"
+LIMIT 10;
